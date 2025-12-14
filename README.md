@@ -1,21 +1,23 @@
-```text
-Decision Latency
+# Decision Latency
 
-This project analyzes decision-making latency using real-world data from
+This project analyzes **decision-making latency** using real-world data from
 GitHub Pull Requests.
 
-A Pull Request (PR) is treated as a proxy for a decision process:
-- a proposal is submitted
-- reviewers evaluate the change
-- a final decision is made (merge or close)
+A Pull Request (PR) is treated as a proxy for a **decision process**:
+- a proposal is submitted,
+- reviewers evaluate the change,
+- a final decision is made (merge or close).
 
 The goal of the project is to understand:
-- how long decisions take
-- what factors contribute to delays
-- how stalled decisions can be identified early
+- **how long decisions take**,  
+- **what factors contribute to delays**,  
+- **how stalled decisions can be identified early**.
 
-Project structure:
+---
 
+## Project structure
+
+```text
 decision-latency/
 ├── notebooks/
 │   ├── 00_data_extraction.ipynb
@@ -27,7 +29,9 @@ decision-latency/
 │   └── apache_airflow_pull_requests_raw.csv
 ├── README.md
 └── requirements.txt
+```
 
+---
 
 ## Notebooks
 - **00_data_extraction.ipynb** – data extraction pipeline using the GitHub API  
