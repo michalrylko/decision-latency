@@ -1,5 +1,12 @@
-# decision-latency analysis
-Decision latency analysis using real-world GitHub Pull Request data (Apache Airflow).
+
+Ten jeden błąd może „rozjechać” całe README na GitHubie.
+
+---
+
+# ✅ POPRAWIONA, FINALNA WERSJA README.md (WKLEJ 1:1)
+
+```markdown
+# Decision Latency Analytics
 
 This project analyzes **decision-making latency** using real-world data from
 GitHub Pull Requests.
@@ -16,57 +23,55 @@ The goal of the project is to understand **how long decisions take**,
 
 ## Project structure
 
+```text
 decision-latency-analytics/
 ├── notebooks/
-│ ├── 00_data_extraction.ipynb
-│ ├── 01_eda.ipynb
-│ ├── 02_feature_engineering.ipynb
-│ ├── 03_modeling.ipynb
-│ └── 04_decision_playbook.ipynb
+│   ├── 00_data_extraction.ipynb
+│   ├── 01_eda.ipynb
+│   ├── 02_feature_engineering.ipynb
+│   ├── 03_modeling.ipynb
+│   └── 04_decision_playbook.ipynb
 ├── data/
-│ └── apache_airflow_pull_requests_raw.csv
+│   └── apache_airflow_pull_requests_raw.csv
 ├── README.md
 └── requirements.txt
 
+Notebooks
 
-### Notebooks
-- **00_data_extraction.ipynb** – data extraction pipeline using the GitHub API  
-- **01_eda.ipynb** – exploratory data analysis of decision latency  
-- **02_feature_engineering.ipynb** – construction of decision-related features  
-- **03_modeling.ipynb** – predictive modeling of delayed (stalled) decisions  
-- **04_decision_playbook.ipynb** – actionable insights and decision design recommendations  
+00_data_extraction.ipynb – data extraction pipeline using the GitHub API
 
----
+01_eda.ipynb – exploratory data analysis of decision latency
 
-## Data source
+02_feature_engineering.ipynb – construction of decision-related features
 
-Public GitHub Pull Request data from the  
-**`apache/airflow`** repository.
+03_modeling.ipynb – predictive modeling of delayed (stalled) decisions
+
+04_decision_playbook.ipynb – actionable insights and decision design recommendations
+
+Data source
+
+Public GitHub Pull Request data from the
+apache/airflow repository.
 
 All data used in this project is publicly available and collected via the
 GitHub REST API.
 
----
+Methodology (high level)
 
-## Methodology (high level)
+Extract Pull Request metadata and timestamps
 
-1. Extract Pull Request metadata and timestamps
-2. Define **decision latency** as the time between PR creation and closure
-3. Explore latency distributions and review dynamics
-4. Engineer features describing decision complexity and collaboration
-5. Build predictive models for stalled decisions
-6. Translate findings into practical decision design guidelines
+Define decision latency as the time between PR creation and closure
 
----
+Explore latency distributions and review dynamics
 
-## Status
+Engineer features describing decision complexity and collaboration
 
-🚧 Work in progress  
+Build predictive models for stalled decisions
+
+Translate findings into practical decision design guidelines
+
+Status
+
+🚧 Work in progress
 This repository is under active development. New notebooks and analyses
 are added incrementally.
-
----
-
-## License
-
-This project is licensed under the MIT License.
