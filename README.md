@@ -1,10 +1,3 @@
-
-Ten jeden błąd może „rozjechać” całe README na GitHubie.
-
----
-
-# ✅ POPRAWIONA, FINALNA WERSJA README.md (WKLEJ 1:1)
-
 ```markdown
 # Decision Latency Analytics
 
